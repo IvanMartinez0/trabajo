@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+.barra{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.logo{
+    background: url(../../img/Logo-hospital.png) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+
+.separador{
+    height: 50px;
+}
+
+.informacion {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.persona{
+    background: url(../../img/Perfil.jpeg) no-repeat center;
+    background-size: cover; /* Hacer que la imagen de fondo cubra el contenedor */
+    background-position: center; /* Centrar la imagen de fondo vertical y horizontalmente */
+    width: 100%; /* Establecer el ancho al 100% para que la imagen ocupe todo el espacio disponible */ /* Mantener una relación de aspecto cuadrada (opcional) */
+    position: relative;
+}
+
+.sobre {
+    padding: 20px; 
+    
+}
+
+
+.sobre table {
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    border-collapse: collapse;
+    
+}
+
+.sobre th, .sobre td {
+    line-height: 5; /* Controla la separación vertical entre líneas */
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.sobre th, .sobre  td {
+    background-color: #333;
+    color: white;
+    border-bottom: 2px solid #ddd;
+}
+
+@media (min-width: 768px) {
+    .informacion {
+        flex-direction: row; /* Alinear horizontalmente en computadoras */
+    }
+
+    .persona {
+        width: 80vh; /* Mantén el mismo tamaño de imagen en computadoras */
+        height: 80vh;
+    }
+
+    .sobre {
+        padding: 20px;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    .informacion {
+        flex-direction: column; /* Apilar verticalmente en dispositivos móviles */
+    }
+
+    .sobre {
+        padding: 20px;
+        margin-top: 20px; /* Agrega espacio entre la imagen y la información en móviles */
+    }
+
+    .persona{
+        padding-top: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+.barra{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.logo{
+    background: url(../../img/Logo-hospital.png) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.foto{
+    background: url(../../img/Perfil.jpeg) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+.separador{
+    height: 50px;
+}
+
+.lista{
+    background-color: rgb(38, 36, 42);
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+   
+}
+
+.lista h1{
+    padding: 20px;
+    color:rgb(255, 255, 255)
+}
+
+.users-table th{
+    padding: 20px;
+    background-color:deepskyblue;
+    font-size: 30px;
+    border: 2px solid deepskyblue;
+    transition: background-color 0.3s, border-color 0.3s; 
+    position: relative;
+}
+
+.users-table h2{
+    float: left;
+    font-size: 30px;
+}
+
+.users-table{
+    width: 100%;
+}
+
+.users-table th:hover{
+    border-color: blue;
+    background-color: rgb(15, 15, 16);
+   
+    color: rgb(255, 255, 255);
+    
+    cursor: pointer;
+}
+
+.vuelta{
+    padding: 20px;
+    background-color:deepskyblue;
+    font-size: 30px;
+    border: 2px solid deepskyblue;
+    transition: background-color 0.3s, border-color 0.3s; 
+    position: relative;
+}
+
+.vuelta a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+
+
+.vuelta:hover{
+    border-color: rgb(15, 15, 16);
+    background-color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+
+

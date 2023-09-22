@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+.barra{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.logo{
+    background: url(../../img/Logo-hospital.png) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.foto{
+    background: url(../../img/Perfil.jpeg) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+.separador{
+    height: 50px;
+}
+

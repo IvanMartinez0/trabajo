@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../img/Fondo.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.barra{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.logo{
+    background: url(../img/Logo-hospital.png) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.foto{
+    background: url(../img/Perfil.jpeg) no-repeat center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    
+}
+
+.separador{
+    height: 50px;
+}
+
+.cajas{
+    height: 250px;
+    width: 80%;
+    max-width: 1200px; /* Establecemos un ancho máximo para evitar que las cajas se vuelvan demasiado anchas en pantallas grandes */
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.cajas p{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.subCajas{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width: 300px;
+    
+}
+
+.subCajas a{
+    padding: 60px;
+    background-color: aqua;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.radio-izquierdo{
+    border-bottom-left-radius: 10px;
+    background: linear-gradient(#4eb1dfcc, rgba(33,16,16,.8)),url(../img/Area.webp) no-repeat center;
+    background-size: cover;
+    transition: transform 0.3s;
+}
+
+.medio1{
+
+    background: linear-gradient(#3f9dc9cc, rgba(33,16,20,.8)),url(../img/Paciente.webp) no-repeat center;
+    background-size: cover;
+    transition: transform 0.3s;
+}
+
+.medio2{
+    background: linear-gradient(#256584cc, rgba(33,16,16,.8)),url(../img/Usuarios.jpg) no-repeat center;
+    background-size: cover;
+    transition: transform 0.3s;
+
+}
+
+.medio3{
+    background: linear-gradient(#256584cc, rgba(33,16,16,.8)),url(../img/Llamados.webp) no-repeat center;
+    background-size: cover;
+    transition: transform 0.3s;
+
+}
+
+.radio-derecho{
+    border-end-end-radius: 10px;
+    background: linear-gradient(#256584cc, rgba(33,16,16,.8)),url(../img/Llamados.webp) no-repeat center;
+    background-size: cover;
+    transition: transform 0.3s;
+    
+}
+
+
+.subCajas a:hover{
+    background-color: blue;
+    transition: transform 0.3s;
+    transform: scale(1.2);
+}
+
+
+/* Estilos para dispositivos con un ancho de pantalla menor o igual a 768px */
+@media (max-width: 768px) {
+    .cajas {
+        width: 100%;
+    }
+
+    .subCajas {
+        flex-direction: column; /* Apila las subcajas verticalmente */
+    }
+
+    .subCajas a {
+        padding: 20px; /* Reduce el espacio entre las subcajas */
+    }
+}
